@@ -1,0 +1,4 @@
+gradio 
+dotenv
+ibm_watsonx_ai
+pandas

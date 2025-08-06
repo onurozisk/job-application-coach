@@ -34,7 +34,19 @@ model = ModelInference(
 
 
 def generate_cover_letter(company_name, position_name, job_description, resume_content):
-    """Function to generate a customized cover letter with AI Model based on the provided inputs"""
+    """ Generate a customized cover letter based on the provided company name, position name,
+    job description, and resume content.
+
+    Args:
+        company_name(string): The name of the company you are applying to.
+        position_name(string): The name of the position you are applying for.
+        job_description (string): The job description for the position.
+        resume_content (string): The content of your resume.
+
+    Returns:
+        string: A customized cover letter tailored to the job description and resume content.
+    """
+
 
     prompt = f"""Generate a customized cover letter using the company name: {company_name},
     the position applied for: {position_name}, 
